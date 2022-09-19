@@ -1,0 +1,165 @@
+
+    footer{
+       
+        .footer-links-group{
+            padding: 2.5em 0.75em 0;
+            background-color:  #282828;
+            font-family: inherit;
+            button{
+                border-radius: 0 .25em .25em 0;
+                padding: .5em 1.125em .5em 1em;
+                width: 7em;
+                border: none;
+            }
+        }
+        h2{
+            font-size: 1.25em;
+            color: $white;
+        }
+        
+        a{
+            color: $secondary;
+            text-align: top;
+            font-size: $font-size-16px;
+            line-height: 1.5em;
+        }
+        
+        input{
+            width:  14.9375em;
+            border: #5C5C5C solid 1px;
+            border-radius: 4px 0px 0px 4px;
+            padding: 0.3125em 0.5em;
+    
+        }
+       
+        
+        .footer-links{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+        }
+        .social-links{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap:1em;
+        }
+        .footer-copyrights{
+            font-size: .875em;
+            background-color: #171717;
+            align-items: center;
+            gap:1em;
+            select{
+              
+                font-family: 'FreightSans Pro';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+                border: none;
+                background-color: #171717;
+                option{
+                    background-color: #171717;
+                }
+            }
+        
+            button{
+                background-color: transparent;
+                border: transparent;
+            }
+            .privacy{
+                border-left: #dadada solid 1px;
+                border-right: #dadada solid 1px;
+            }
+        }
+      
+        @media only screen and (min-width: 721px) {
+            .footer-links{
+                grid-area: links;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                justify-content: space-between;
+            }
+            .footer-links-group{
+                display: grid;
+                grid-template-areas: "links links subscribe"
+                                    "links links social";
+                padding:  2.5em 5em;
+            }
+            .form{
+                grid-area: subscribe;
+                display: flex;
+                flex-direction: column;
+
+            }
+            
+            .social-links{
+               grid-area: social;
+                display: flex;
+                flex-direction: row;
+                gap:3em;
+                max-width:20em;
+            }
+           
+            .footer-copyrights{
+                padding: 0 5em;
+                font-size: .7em;
+                display: flex;
+                justify-content: space-between;
+                .language-select{
+                    order: 3;
+                }
+                .privacy-links{
+                    order: 2;
+                }
+                .Rights{
+                    display: flex;
+                    flex-direction: row;
+                    gap: .25em;
+                    order: 1;
+                }
+            }
+          
+        }
+        @media only screen and (max-width: 720px) {
+            .form{
+                display: flex;
+                flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               form{
+                display: flex;
+                flex-direction: row;
+               }
+             }
+             .footer-copyrights{
+                padding: 0 5em;
+                font-size: .7em;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .Rights{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25em;
+                    order: 1;
+                }
+               
+            }
+
+        }
+         @media only screen and (max-width: 300px) {
+            // to prevent window resizing problems
+
+           .form form{
+                display: flex;
+                flex-direction: column;
+
+                button{
+                    width: 80%;
+                }
+            }
+         }
+    }

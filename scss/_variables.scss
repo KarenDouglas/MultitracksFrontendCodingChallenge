@@ -1,0 +1,26 @@
+
+//theme colors
+
+$primary: #282828;
+$secondary: #919191;
+$accent:  #43B1E6;
+$white:  #FFFFFF;
+
+//fonts
+$base-font-family: 'Lato';
+$font-weight-700: 700;
+$font-weight-400: 400;
+$font-size-33px: 2.0625em;
+$font-size-14px: 0.875em;
+$font-size-16px: 1em;
+
+// color palette
+$colors:(
+    "primary": $primary,
+    "secondary": $secondary,
+    "accent": $accent,
+    "white": $white
+);
+
+//spacing
+$base-padding : 1em

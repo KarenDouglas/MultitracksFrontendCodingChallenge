@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet"    href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Nav Bar -->
+
+    <header>
+        <!-- Site Nav-->
+        <nav class="flex-row space-between ">
+            <div class="nav-group flex-row space-between">
+                <div class="flex-row mobile-menu">
+                    <img src="Assets/3dots.png" alt="menu button">
+                </div>
+                <div class="flex-row text-center space-between">
+                    <a class="flex-row text-center" href="">
+                        <img class="mobile-link" src="Assets/MT.png" alt="home">
+                        <img class="desktop-link" src="Assets/logo-mono.svg" alt="">
+                    </a>
+                    <div class=" ml-0_5 flex-row flex-nav-links  ">
+                        <a class="flex-row text-center ml-0_5" href="">Products <i class="ml-0_5"><img class="" src="Assets/triangle-down.png" alt=""></i></a>
+                        <a class="flex-row text-center ml-0_5" href="">Songs<i class="ml-0_5"><img  src="Assets/triangle-down.png" alt=""></i></a>
+                        <a class="flex-row text-center ml-0_5" href="">Sounds<i class="ml-0_5"><img  src="Assets/triangle-down.png" alt=""></i></a>
+                        <a class="flex-row text-center ml-0_5" href="">Pricing<i class="ml-0_5 "></i></a>
+                        <a class="flex-row text-center ml-0_5" href="">More <i class="ml-0_5"><img  src="Assets/triangle-down.png" alt=""></i></a>
+                    </div>
+                    <a class="flex-row text-center ml-0_5 text-accent covid" href="">COVID-19</a>
+                </div>
+            </div>
+            <!-- Account Nav-->
+            <div class="flex-row text-center">
+                <a class="flex-row mobile-link mr-1" href=""><i><img src="Assets/magnifying glass.png" alt="search button"></i></a>
+                <a class="flex-row desktop-link text-center mr-1" href=""><i><img class="cart-img" src="Assets/cart.png" alt=""></i><p>Cart</p></a>
+                <a class="flex-row text-center ml-0_5 mr-0_5" href=""><i><img src="Assets/user (Stroke).png" alt="user info"></i><p class="ml-0_5 desktop-link"> Account</p></a>
+                <a class="flex-row text-center desktop-link ml-1" href=""><i><img class = "sup-img ml-0_5 mr-0_5"src="Assets/support.png" ></i><p >Support</p></a>
+                <input class=" desktop-link search-bar" type="search" placeholder="Search" width="1em">
+            </div>
+        </nav>
+    </header>
+    <!-- Cart Container-->
+    <div class="shifter ">
+        <!--STICK  BUTTON-->
+        <div class="sticky-button flex-row space-between p-1">
+            <div class="font-weight-700">
+                <p class="font-weight-700 mb-0_5">TOTAL</p>
+                <p class="font-weight-700">41 Credits</p>
+            </div>
+            <button class="text-white">PLACE ORDER</button>
+        </div>
+        <!--START OF CART-->
+        <section class="cart ">
+            <h1 class="text-primary">My Cart</h1>
+            <section class="cart-items-container">
+                <!--Cart Items-->
+                <div class=" flex-row space-between ">
+                    <div class="cart-song-group flex-row">
+                        <img src="Assets/FullsizeGIG.png" alt="Graves into Gardens Album Cover">
+                        <div class="pl-1">
+                            <h2 class="text-primary">Graves into Gardens</h2>
+                            <h2 class=" cart-album-title text-secondary font-weight-400">Elevation Worship</p>
+                        </div>
+                    </div>
+                    <button class="cart-delete-button mobile-link"><i><img src="Assets/icon-x-close.png" alt="Delete Button"></i></button>
+                </div>
+                <div class="cart-purchase-type-credits-group flex-row space-between">
+                    <div class="flex-row">
+                        <i><img src="Assets/MultiTracks.png" alt=""></i>
+                        <p class="cart-purchase-type text-secondary font-weight-700">MultirTrack WAV</p>
+                    </div>
+                    <div class="flex-column space-between">
+                        <h2>39 credits</h2>
+
+                        <div class="flex-row desktop-link">
+                            <a>Remove</a>
+                            <a class="ml-0_5 save-later-link">Save for Later</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-save-button mobile-link">
+                    <button class="text-secondary">Save For Later</button>
+                </div>
+                
+                <!-- End of Cart Items-->
+            </section>
+            <section class="cart-items-container">
+                <!--Cart Items-->
+                <div class=" flex-row space-between ">
+                    <div class="cart-song-group flex-row">
+                        <img src="Assets/fullsizeGoG.png" alt="Graves into Gardens Album Cover">
+                        <div class="pl-1">
+                            <h2 class="text-primary">Goodness of God</h2>
+                            <h2 class=" cart-album-title text-secondary font-weight-400">Bethel Music</p>
+                        </div>
+                    </div>
+                    <button class="cart-delete-button mobile-link"><i><img src="Assets/icon-x-close.png" alt="Delete Button"></i></button>
+                </div>
+                <div class="cart-purchase-type-credits-group flex-row space-between">
+                    <div class="flex-row">
+                        <i><img src="Assets/Chart-icon.png" alt=""></i>
+                        <p class="cart-purchase-type text-secondary font-weight-700">Chart</p>
+                    </div>
+                    <div class="flex-column space-between">
+                        <h2>2 credits</h2>
+
+                        <div class="flex-row desktop-link">
+                            <a>Remove</a>
+                            <a class="ml-0_5 save-later-link">Save for Later</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-save-button mobile-link">
+                    <button class="text-secondary">Save For Later</button>
+                </div>
+                
+                <!-- End of Cart Items-->
+            </section>
+
+            <!-- Start of Continue Shopping Section-->
+                <div class="cart-continue-shopping flex-row">
+                    <button><img src="/Assets/Line (Stroke)-left.png" alt=""></button>
+                    <h3 class="text-accent">Continue Shopping</h2>
+                </div>
+        </section>
+        <!--END OF CART-->   
+
+     
+        <!-- save for later-->
+        <section class="save-later-container">
+            <h2 class="text-primary font-weight-700">Saved for later</h2>
+
+            <!-- Save Later Item-->
+            <section class="save-items-container">
+                <div class="album-text-deletebtn-group flex-row space-between">
+                    <div class="save-song-group flex-row">
+                        <img src="Assets/Album-Cover.png" alt="Graves into Gardens Album Cover">
+                        <div class="save-song-title-group">
+                            <h2 class="text-primary">Forever (Live Version)</h2>
+                            <h2 class=" save-album-title text-secondary font-weight-400">Karl Jobe</p>
+                        </div>
+                    </div>
+                    <button class="save-delete-button mobile-link"><img src="Assets/icon-x-close.png" alt="Delete Button"></button>
+                </div>
+                <div class="save-purchase-type-credits-group flex-row space-between">
+                    <div class=" flex-row">
+                        <i> <img src="Assets/MultiTracks.png" alt=""></i>
+                        <p class="save-purchase-type text-secondary font-weight-700">MultirTrack WAV</h2>
+                    </div>
+                    <div class="add-cart-button">
+                        <button class="text-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Save Later Item-->
+            <section class="save-items-container">
+                <div class="album-text-deletebtn-group flex-row space-between">
+                    <div class="save-song-group flex-row">
+                        <img src="Assets/in-god-we-trust.png" alt="Graves into Gardens Album Cover">
+                        <div class="save-song-title-group">
+                            <h2 class="text-primary">In God We Trust</h2>
+                            <h2 class=" save-album-title text-secondary font-weight-400">Hilsong Worship</p>
+                        </div>
+                    </div>
+                    <button class="save-delete-button mobile-link"><img src="Assets/icon-x-close.png" alt="Delete Button"></button>
+                </div>
+                <div class="save-purchase-type-credits-group flex-row space-between">
+                    <div class=" flex-row">
+                        <i> <img src="Assets/MultiTracks.png" alt=""></i>
+                        <p class="save-purchase-type text-secondary font-weight-700">MultirTrack WAV</h2>
+                    </div>
+                    <div class="add-cart-button">
+                        <button class="text-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Save Later Item-->
+            <section class="save-items-container">
+                <div class="album-text-deletebtn-group flex-row space-between">
+                    <div class="save-song-group flex-row">
+                        <img src="Assets/this-is-amazing-grace.png" alt="Graves into Gardens Album Cover">
+                        <div class="save-song-title-group">
+                            <h2 class="text-primary">This is Amazing Grace</h2>
+                            <h2 class=" save-album-title text-secondary font-weight-400">Phil Wickham</p>
+                        </div>
+                    </div>
+                    <button class="save-delete-button mobile-link"><img src="Assets/icon-x-close.png" alt="Delete Button"></button>
+                </div>
+                <div class="save-purchase-type-credits-group flex-row space-between">
+                    <div class=" flex-row">
+                        <i> <img src="Assets/MultiTracks.png" alt=""></i>
+                        <p class="save-purchase-type text-secondary font-weight-700">MultirTrack WAV</h2>
+                    </div>
+                    <div class="add-cart-button">
+                        <button class="text-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </section>
+          
+        </section>
+        <!--END OF SAVE FOR LATER-->
+
+    <!-- Cart order summary-->
+    <section class="cart-order-summary">
+        <div class="cart-summary-details font-weight-700">
+            <h2 class="font-weight-700">Order Summary</h2>
+            <div class="cart-receipt">
+                <div class="flex-row space-between font-weight-700">
+                    <p>Credits in your account</p><p class="cart-price  text-secondary">234</p>
+                </div>
+                <div class="flex-row space-between">
+                    <p>Credits required</p><p class="cart-price text-secondary ">41</p>
+                </div>
+                <div class="cart-promo flex-row space-between">
+                    <p>Promo Code</p> <i><img src="Assets/Line (Stroke)-down.png" alt=""></i>
+                </div>
+                <div class="cart-subtotal flex-row space-between">
+                    <p>Subtotal</p><p class="cart-price text-secondary">41</p>
+                </div>
+                <div class="cart-tax flex-row space-between">
+                    <p>Tax</p><p class="cart-price text-secondary">-</p>
+                </div>
+                <div class="cart-total flex-row space-between">
+                    <p>TOTAL</p><p class="cart-price text-secondary">41</p>
+                </div>
+                <div class="cart-payment-method">
+                    <p>Payment Method</p>
+                <div class="flex-row space-between">
+                    <p>American Express<span class="font-weight-400 text-secondary"> - 1234</span></p><a class="font-weight-400 text-accent"> Change</a>
+                </div>
+                </div>
+                <p class="text-secondary" style="font-weight:400 ">All sales are final</p>
+                <div class="cart-order-button-group">
+                    <button class="text-white">PLACE ORDER</button>
+                    <p class="text-secondary">By finalizing your order, you agree to the </p>
+                    <p class="text-secondary">
+                        <a class="text-secondary" href="">Terms of Use</a> and
+                        <a class="text-secondary" href="">Privacy Policy</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+      
+    </section>
+   
+</div>
+<!--Footer-->
+    <footer>
+        <div class="footer-links-group">
+           <!-- Subscribe Form--> 
+            <section class="form" >
+                <div>
+                    <h2 class="text-white mb-0_5 ">Subscribe to our Newsletter</h2>
+                    <form class="mb-2">
+                        <input class="bg-primary"type="text" placeholder="Email Address">
+                        <button class="bg-accent text-white">Subscribe</button>
+                    </form>
+                </div>
+                <!--Have a Problem Link-->
+                <div>
+                    <h2 class="text-white mb-0_5">Have a Problem?</h2>
+                    <div class="flex-row text-center pb-2">
+                        <a href="">View FAQs or Contact our Support Team</a><span class="ml-0_5"><img src="Assets/Line (Stroke)-right.png" alt=""></span>
+                    </div>
+                </div>
+            </section>
+                <!-- Subscribe Form End--> 
+
+                <!--Footer Links-->
+            <section class="footer-links">
+                <div>
+                    <h2>Products</h2>
+                    <ul class="mt-0">
+                        <li><a href="">The Connected Stage</a></li>
+                        <li><a href="">Tracks</a></li>
+                        <li><a href="">Playback</a></li>
+                        <li><a href="">Pad Player</a></li>
+                        <li><a href="">Playback Rentals</a></li>
+                        <li><a href="">Cloud Pro</a></li>
+                        <li><a href="">RehearsalMix</a></li>
+                        <li><a href="">ChartBuilder</a></li>
+                        <li><a href="">Solo Practice</a></li>
+                        <li><a href="">Charts</a></li>
+                        <li><a href="">ProPresenter</a></li>
+                        <li><a href="">Sounds</a></li>
+                        <li><a href="">Gratis License</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Resources</h2>
+                    <ul class="mt-0">
+                        <li><a href="">Songs</a></li>
+                        <li><a href="">Patches</a></li>
+                        <li><a href="">Training</a></li>
+                    </ul >
+                    <h2>Company</h2>
+                    <ul class="mt-0">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Partner Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Store</h2>
+                    <ul class="mt-0">
+                        <li><a href="">Buy Credits</a></li>
+                        <li><a href="">Free Content</a></li>
+                        <li><a href="">Request a Song</a></li>
+                    </ul >
+                    <h2>Extras</h2>
+                    <ul class="mt-0">
+                        <li><a href="">Sessions</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Submit your content</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Account</h2>
+                    <ul class="mt-0">
+                        <li><a href="">View cart</a></li>
+                        <li><a href="">Organization</a></li>
+                        <li><a href="">My Profile</a></li>
+                        <li><a href="">Library</a></li>
+                        <li><a href="">Setlists</a></li>
+                        <li><a href="">RehearsalMix</a></li>
+                        <li><a href="">Custom Session</a></li>
+                    </ul>
+                </div>
+            </section>
+        <!--Footer Links End-->
+
+             <!--Social Media Links-->
+             <div class="social-links">
+                <div class="flex-row space-between ">
+                    <i class="mr-1"><img src="Assets/Facebook.png" alt=""></i>
+                    <i class="mr-1"><img src="Assets/Twitter.png" alt=""></i>
+                    <i class="mr-1"><img src="Assets/Instagram.png" alt=""></i>
+                    <i><img src="Assets/YouTube.png" alt=""></i>
+                 </div>
+                 <div class="flex-row ">
+                    <i class="mr-1"><img src="Assets/likeBtn.png" alt=""></i>
+                    <i><img src="Assets/follow.png" alt=""></i>
+                 </div>
+             </div>
+             
+             <!--Social Media Links End-->
+              
+        </div>
+       <!-- CopyRights Terms Info-->
+       <section class="footer-copyrights pb-2">
+        <!--language-->
+        <div class="flex-row text-center pt-1 language-select">
+            <i class="mr-0_5"><img src="Assets/Combined Shape.png" alt=""></i>
+            <select class="text-secondary text-center flex-row">
+                <i class="mr-0_5"><img src="Assets/Combined Shape.png" alt=""></i>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+            </select>
+        </div>
+
+        <!--Terms Privacy Contact Links-->
+        <div class="flex-row privacy-links">
+            <a href="">Terms </a>
+            <a href="" class="privacy mr-0_5 ml-0_5 pl-0_5 pr-0_5">Privacy</a>
+            <a href="">Contact</a>
+        </div>
+
+        <!-- Rights Reserved-->
+        <div class="text-secondary text-center Rights">
+            <p> &copy;2006-2021 MultiTracks.com LLC </p>
+            <p> All Rights Reserved</p>
+        </div>
+       </section>
+       <!--End of Copyrights Terms Info-->
+     
+    </footer>
+    
+    
+</body>
+</html>

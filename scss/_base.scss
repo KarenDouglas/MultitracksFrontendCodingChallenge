@@ -1,0 +1,121 @@
+@import '_variables';
+
+/* --------*/
+/* RESET */
+/* ------*/
+
+/* Lato Font */
+
+
+/* BOX SIZING*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+  font-weight: 400;
+  font-family: $base-font-family;
+ }
+ul, p, a {
+    padding: 0;
+    list-style: none;
+    font-family: $base-font-family;
+}
+a{
+  text-decoration: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+
+  /*MAKE IMG EASIER TO WORK WITH*/
+img,
+picture{
+  max-width: 100%;
+  display: block;
+}
+
+// utility classes
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-row-rev{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flex-col-rev{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.space-between{
+  justify-content: space-between;
+  
+  }
+  .space-around{
+    justify-content: space-around;
+    
+    }
+  .text-center{
+    align-items: center;
+  }
+.font-weight-400{
+  font-weight: $font-weight-400;
+}
+.font-weight-700{
+  font-weight: $font-weight-700;
+}
+
+
+// Mobile and Desktop Only Links
+@media only screen and (max-width: 720px) {
+  .desktop-link{
+    display: none;
+  }
+}
+@media only screen and (min-width: 721px) {
+  .mobile-link{
+    display: none;
+  }
+}

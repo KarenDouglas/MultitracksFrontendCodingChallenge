@@ -1,0 +1,293 @@
+.text-primary {
+  color: #282828;
+}
+
+.text-secondary {
+  color: #919191;
+}
+
+.text-accent {
+  color: #43B1E6;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+/* --------*/
+/* RESET */
+/* ------*/
+/* Lato Font */
+/* BOX SIZING*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*MAKE IMG EASIER TO WORK WITH*/
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 1rem);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    border-bottom: solid 1px #DADADA;
+    padding-left: 1.25em;
+  }
+  header .nav-group {
+    width: 53%;
+    min-width: 30%;
+    align-items: center;
+  }
+  header .nav-group2 li {
+    margin: 1.25em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cart {
+    padding: 1.75em 1em 0 1em;
+  }
+  .cart h1 {
+    color: #282828;
+    font-size: 2.0625em;
+    font-weight: 700;
+  }
+  .cart .cart-items-container {
+    padding: 2em 0.5em;
+    border-bottom: solid 1px #DADADA;
+  }
+  .cart .cart-items-container .cart-song-group img {
+    width: 3em;
+    height: 3em;
+  }
+  .cart .cart-items-container h2 {
+    font-weight: 700;
+    font-size: 0.875em;
+  }
+  .cart .cart-items-container .cart-album-title {
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+  .cart .cart-items-container .cart-song-title-group {
+    padding-left: 1em;
+  }
+  .cart .cart-items-container .cart-delete-button {
+    border: transparent;
+    background-color: transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-inline: 0.1875em;
+  }
+  .cart .cart-items-container .cart-purchase-type-credits-group {
+    padding-top: 1.125em;
+  }
+  .cart .cart-items-container .cart-purchase-type {
+    padding-left: 0.25em;
+    font-size: 0.875em;
+  }
+  .cart .cart-items-container .cart-save-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+  }
+  .cart .cart-items-container .cart-save-button button {
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: solid 1px #919191;
+  }
+  .cart .cart-continue-shopping {
+    padding: 1em 0 2.5em;
+  }
+  .cart .cart-continue-shopping button {
+    background-color: transparent;
+    border: transparent;
+  }
+  .cart .cart-continue-shopping h3 {
+    padding-left: 0.5625em;
+    font-size: 1em;
+  }
+  .cart-order-summary {
+    background: #FAFAFA;
+    padding: 2.5em 1em;
+  }
+  .cart-order-summary a {
+    text-decoration: underline;
+  }
+  .cart-order-summary p {
+    font-weight: inherit;
+    margin-bottom: 0.5em;
+  }
+  .cart-order-summary .cart-receipt {
+    padding: 2em 0.5em;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .cart-order-summary .cart-receipt .cart-promo {
+    padding: 1em 0 0.5em;
+    align-items: center;
+  }
+  .cart-order-summary .cart-receipt .cart-subtotal {
+    padding-top: 1em;
+    border-top: #DADADA solid 1px;
+  }
+  .cart-order-summary .cart-receipt .cart-tax {
+    padding-bottom: 1em;
+  }
+  .cart-order-summary .cart-receipt .cart-total {
+    border-bottom: #DADADA solid 1px;
+    border-top: #DADADA solid 1px;
+    padding: 1em 0 0.5em;
+  }
+  .cart-order-summary .cart-receipt .cart-payment-method {
+    padding: 1em 0 0.5em;
+    border-bottom: #DADADA solid 1px;
+    margin-bottom: 1em;
+  }
+  .cart-order-summary .cart-receipt .cart-order-button-group {
+    text-align: center;
+  }
+  .cart-order-summary .cart-receipt .cart-order-button-group p {
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1.3125em;
+  }
+  .cart-order-summary .cart-receipt .cart-order-button-group button {
+    border: transparent;
+    border-radius: 2em;
+    width: 100%;
+    padding: 1em;
+    background-color: #43B1E6;
+    font-weight: 700;
+    border: solid 1px #919191;
+    margin: 0.5em 0 2em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .save-later-container .save-items-container {
+    padding: 2em 0.5em;
+    border-bottom: solid 1px #DADADA;
+  }
+  .save-later-container .save-items-container .save-song-group img {
+    width: 3em;
+    height: 3em;
+  }
+  .save-later-container .save-items-container h2 {
+    font-weight: 700;
+    font-size: 0.875em;
+  }
+  .save-later-container .save-items-container .save-album-title {
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+  .save-later-container .save-items-container .save-song-title-group {
+    padding-left: 1em;
+  }
+  .save-later-container .save-items-container .save-delete-button {
+    border: transparent;
+    background-color: transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-inline: 0.1875em;
+  }
+  .save-later-container .save-items-container .save-purchase-type-credits-group {
+    padding-top: 1.125em;
+  }
+  .save-later-container .save-items-container .save-purchase-type {
+    padding-left: 0.25em;
+    font-size: 0.875em;
+  }
+  .save-later-container .save-items-container .add-cart-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+  }
+  .save-later-container .save-items-container .add-cart-button button {
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: solid 1px #919191;
+  }
+}/*# sourceMappingURL=index.css.map */
